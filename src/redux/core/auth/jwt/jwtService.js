@@ -16,8 +16,7 @@ export default class JwtService {
     console.log("API_URL Login : ", process.env.REACT_APP_API_URL);
 
     const API_URL =
-      process.env.REACT_APP_API_URL ||
-      "https://dull-bull-cowboy-hat.cyclic.app";
+      process.env.REACT_APP_API_URL || "http://102.211.210.62:3001";
 
     axios.defaults.baseURL = `${API_URL.trim()}`;
     // ** Request Interceptor
